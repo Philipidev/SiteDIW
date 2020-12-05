@@ -1,0 +1,103 @@
+body {
+    font-size: 15px;
+}
+
+.carousel-item {
+    height: 500px;
+    background-size: cover;
+}
+
+.sinopse {
+    padding-top: 20px;
+    padding-left: 25px;
+    text-align: left;
+}
+
+main {
+    padding: 20px 20px 20px;
+}
+
+.video {
+    margin: 20px;
+    height: 450px;
+    width: 900px;
+}
+
+.lancamento {
+    background: #ccc;
+    padding-right: 25px;
+    margin-bottom: 30px;
+}
+
+.lancamento h1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.img-card img {
+    height: 400px;
+}
+
+.img-card {
+    text-align: center;
+}
+
+.destaque .row:first-child {
+    padding: 10px 30px 20px;
+    align-items: center;
+}
+
+#categoria {
+    border-radius: 7%;
+    padding: 15px;
+    font-size: 0.7em;
+    width: 400px;
+}
+
+.avaliacao {
+    padding: 10px 30px 20px;
+    align-items: center;
+}
+
+.avaliacao .row img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.entrevista {
+    background: #ccc;
+    padding: 20px 20px;
+}
+
+.entrevista iframe {
+    height: 400px;
+    width: 500px;
+}
+
+.nov-so-edi {
+    padding: 30px 50px;
+}
+
+.novidades {
+    margin-right: -20px;
+}
+
+.novidades img {
+    height: 250px;
+    width: 250px;
+}
+
+.direita {
+    padding-left: 20px;
+}
+
+.editorial {
+    padding-top: 60px;
+}
+
+.editorial img {
+    width: 40px;
+    height: 40px;
+}

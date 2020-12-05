@@ -1,0 +1,278 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/Style.css">
+    <title>Trabalho Prático</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="/Scripts/lancamentos.js"></script>
+    <script type="text/javascript" src="/Scripts/destaques.js"></script>
+</head>
+
+<body>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Films Media (Trabalho)</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Lançamentos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="category.html">Em destaque<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Avaliações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Entrevista e Makingof</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Novidades</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" aria-label="Small"
+                            aria-describedby="inputGroup-sizing-sm" placeholder="Search...">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-secondary btn-number">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Coursel de Lancamento -->
+    <section class="lancamento container-fluid">
+        <h1>Lançamentos</h1>
+        <div class="carousel slide" id="carousel1_indicator" data-ride="carousel">
+            <!-- <ol class="carousel-indicators">
+                <li data-target="#carousel1_indicator" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel1_indicator" data-slide-to="1"></li>
+                <li data-target="#carousel1_indicator" data-slide-to="2"></li>
+            </ol> -->
+            <div id="lancamentos-js" class="carousel-inner">
+                <script>ListarLancamentos()</script>
+                <!-- <a class="carousel-control-prev" href="#carousel1_indicator" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel1_indicator" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a> -->
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Destaques -->
+        <section class="destaque container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <h2>Em destaque</h2>
+                </div>
+                <div class="col-md-3">
+                    <h2>
+                        <select name="categoria" id="categoria">
+                            <option autofocus value="default">Categoria: TODOS</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Comedia">Comedia</option>
+                        </select>
+                    </h2>
+                </div>
+            </div>
+            <div id="destaques-js" class="filmes-destaque row">
+                <script>ListarDestaques();</script>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="avaliacao">
+            <h2>Últimas Avaliações</h2>
+            <div id="avaliacaoes-js" class="row">
+                <!-- ListarDestaques tbm preenche aqui -->
+            </div>
+        </section>
+    </main>
+
+    <section class="entrevista container-fluid">
+        <h1>Entrevistas & Making of</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <iframe src="https://www.youtube.com/embed/ra3eGAujZfc" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h3><b>Filme: </b>Titanic</h3>
+                <br>
+                <p><b>Diretor: </b>James Cameron</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><b>Roteiro: </b>James Cameron</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><b>Estreia: </b>1997</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <iframe src="https://www.youtube.com/embed/_v6gjCum-LI" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h3><b>Filme: </b>À Espera de um Milagre</h3>
+                <br>
+                <p><b>Diretor: </b>Frank Darabont</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><b>Roteiro: </b>Frank Darabont</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><b>Estreia: </b>2000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <iframe src="https://www.youtube.com/embed/AQhplTZBoUQ" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h3><b>Filme: </b>Homem de Ferro</h3>
+                <br>
+                <p><b>Diretor: </b>Jon Favreau, Shane Black</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><b>Roteiro: </b>Jon Favreau</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><b>Estreia: </b>2008</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="nov-so-edi container-fluid">
+        <div class="row">
+            <section class="novidades col-md-8">
+                <h2>Novidades</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/en/1/19/Titanic_%28Official_Film_Poster%29.png" />
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Titanic</h3><br>
+                        <b>Avaliação: </b> Simplesmente fantástico, encantador e marcante! Talvez não exista um filme
+                        que tenha marcado tanto quanto o grandioso Titanic. Tento puxar pela memória, mas não consigo
+                        lembrar de nenhum outro que tenha cativado tanto e levado uma legião de fãs de maneira tão
+                        frenética aos cinemas.
+                        <br>
+                        <span class="badge badge-pill badge-secondary">hollywood</span>
+                        <span class="badge badge-pill badge-secondary">oscar</span>
+                        <span class="badge badge-pill badge-secondary">melhor filme</span>
+                    </div>
+                </div>
+                <br>
+                <hr><br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://br.web.img3.acsta.net/pictures/15/12/22/14/50/434620.jpg" />
+                    </div>
+                    <div class="col-md-6">
+                        <h3>A Escolha</h3><br>
+                        <b>Avaliação: </b> O filme tinha tudo pra ter um romance bacana, com mais tempo vivendo juntos
+                        como casal, mas logo enfiaram duas crianças na história e elas já crescidas rapidamente.. Achei
+                        o filme bem forçado, deixou a desejar bastante. Esperava mais.
+                        <br>
+                        <span class="badge badge-pill badge-secondary">hollywood</span>
+                        <span class="badge badge-pill badge-secondary">oscar</span>
+                        <span class="badge badge-pill badge-secondary">melhor filme</span>
+                    </div>
+                </div>
+                <br>
+                <hr><br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://i.pinimg.com/originals/2c/33/5b/2c335b8d036747c4e0101c4b8266452b.jpg" />
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Mulher Maravilha</h3><br>
+                        <b>Avaliação: </b>Ficou tudo muito bem dosado, o tom de humor, as lutas, o drama, a forma como
+                        construíram a protagonista, a israelense Gal Gadot, a forma qe a diretora abordou os fatos
+                        mitológicos, o feminismo sem extremismo, enfim, na minha opinião, um filmão da porra. Esse filme
+                        carrega uma importância muito significativa, tanto para o cinema, quanto pra sociedade, uma
+                        amostra muito bem sucedida do empoderamento e da visibilidade da mulher.
+                        <br>
+                        <span class="badge badge-pill badge-secondary">hollywood</span>
+                        <span class="badge badge-pill badge-secondary">oscar</span>
+                        <span class="badge badge-pill badge-secondary">melhor filme</span>
+                    </div>
+                </div>
+            </section>
+            <div class="direita col-md-4">
+                <section class="sobre">
+                    <h2><b>Sobre</b></h2>
+                    Site feito para o trabalho de Desenvolvimento de Interfaces Web para a PUC Minas
+                </section>
+                <section class="editorial">
+                    <h2>Editorial</h2>
+                    <img src="https://cdn.icon-icons.com/icons2/1674/PNG/512/person_110935.png"><b>Redação: </b>Philipi Altoé<br>
+                    <img src="https://cdn.icon-icons.com/icons2/1674/PNG/512/person_110935.png"><b>Pesquisa: </b>Philipi Gariglio<br>
+                    <img src="https://cdn.icon-icons.com/icons2/1674/PNG/512/person_110935.png"><b>Gerente Geral:
+                    </b>Philipi Carvalho<br>
+                    <br>
+                    <h2>Redes Sociais</h2>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <img src="https://img.icons8.com/ios/452/facebook-new.png">
+                        </div>
+                        <div class="col-md-1">
+                            <img
+                                src="data:image/png;base64,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">
+                        </div>
+                        <div class="col-md-1">
+                            <img
+                                src="data:image/png;base64,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">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!--OptionalJavaScript-->
+    <!--jQueryfirst, thenPopper.js, thenBootstrapJS -->
+    // $(document).ready(function () {
+    // console.log("ready!");
+    // });
+    </script>
+
+
+    <script src="js/addons/rating.js "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js "
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV "
+        crossorigin="anonymous "></script>
+</body>
+
+</html>
