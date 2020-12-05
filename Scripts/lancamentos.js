@@ -41,7 +41,7 @@ async function sucessoLancamento() {
                 </div>
             </div>`;
         textooo += carousel;
-        videoId = `video${j}`;
+        videoId = `video${j}`; 
     }
     textooo += `
         <a class="carousel-control-prev" href="#carousel1_indicator" role="button" data-slide="prev">
