@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="Styles/Style.css">
@@ -12,6 +13,7 @@
 </head>
 
 <body>
+    <script>LoadMovies();</script>
     <!-- Navegação -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
@@ -42,13 +44,7 @@
 
                 <form class="form-inline my-2 my-lg-0">
                     <div class="input-group input-group-sm">
-                        <input type="text" class="form-control" aria-label="Small"
-                            aria-describedby="inputGroup-sizing-sm" placeholder="Search...">
-                        <div class="input-group-append">
-                            <button type="button" class="btn btn-secondary btn-number">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
+                        <a href="search.html"><button type="button">Pesquisar Filmes!!</button></a>
                     </div>
                 </form>
             </div>
@@ -59,8 +55,14 @@
     <section class="lancamento container-fluid">
         <h1>Lançamentos</h1>
         <div class="carousel slide" id="carousel1_indicator" data-ride="carousel">
+            <ol id="indicators" class="carousel-indicators">
+                <li data-target="#carousel1_indicator" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel1_indicator" data-slide-to="1"></li>
+                <li data-target="#carousel1_indicator" data-slide-to="2"></li>
+              </ol>
             <div id="lancamentos-js" class="carousel-inner">
-                <script>ListarLancamentos()</script>
+
+                <script>//ListarLancamentos()</script>
             </div>
         </div>
     </section>
@@ -216,8 +218,10 @@
                 </section>
                 <section class="editorial">
                     <h2>Editorial</h2>
-                    <img src="https://cdn.icon-icons.com/icons2/1674/PNG/512/person_110935.png"><b>Redação: </b>Philipi Altoé<br>
-                    <img src="https://cdn.icon-icons.com/icons2/1674/PNG/512/person_110935.png"><b>Pesquisa: </b>Philipi Gariglio<br>
+                    <img src="https://cdn.icon-icons.com/icons2/1674/PNG/512/person_110935.png"><b>Redação: </b>Philipi
+                    Altoé<br>
+                    <img src="https://cdn.icon-icons.com/icons2/1674/PNG/512/person_110935.png"><b>Pesquisa: </b>Philipi
+                    Gariglio<br>
                     <img src="https://cdn.icon-icons.com/icons2/1674/PNG/512/person_110935.png"><b>Gerente Geral:
                     </b>Philipi Carvalho<br>
                     <br>
